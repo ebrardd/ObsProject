@@ -155,111 +155,125 @@ body {
   color: white;
 }
 .desc-p{
-   /* You are giving 7 courses this semester */
+  /* You are giving 7 courses this semester */
 
-position: fixed;
-width: 416.5px;
-height: 40.72px;
-left: 484.74px;
-top: 85.55px;
+  position: fixed;
+  width: 416.5px;
+  height: 40.72px;
+  left: 484.74px;
+  top: 85.55px;
 
-font-family: 'Poppins';
-font-style: normal;
-font-weight: 500;
-font-size: 20px;
-line-height: 30px;
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 30px;
 
-color: #FFFFFF;
+  color: #FFFFFF;
 
 }
 
 .tablo-1{
-    position: fixed;
-width: 386px;
-height: 210px;
-left: 500.74px;
-top: 210px;
-border-radius: 20px;
-background: #7195F1;
-color:white;
+  position: absolute;
+  width: 386px;
+  height: 210px;
+  left: 400.74px;
+  top: 210px;
+  border-radius: 20px;
+  background: #7195F1;
+  color:white;
 }
 
 .tablo-2{
-    position: fixed;
-width: 386px;
-height: 210px;
-left: 500.74px;
-top: 450.55px;
-border-radius: 20px;
-background: #7195F1;
-color:white;
+  position: absolute;
+  width: 386px;
+  height: 210px;
+  left: 400.74px;
+  top: 450.55px;
+  border-radius: 20px;
+  background: #7195F1;
+  color:white;
 }
 
 .tablo-3{
-    position: fixed;
-width: 386px;
-height: 210px;
-left: 500.74px;
-top: 700.55px;
-border-radius: 20px;
-background: #7195F1;
-color:white;
+  position: absolute;
+  width: 386px;
+  height: 210px;
+  left: 400.74px;
+  top: 700.55px;
+  border-radius: 20px;
+  background: #7195F1;
+  color:white;
 }
 
 .tablo-4{
-    position: fixed;
-width: 386px;
-height: 210px;
-left: 1100.74px;
-top: 210.55px;
-border-radius: 20px;
-background: #7195F1;
-color:white;
+  position: absolute;
+  width: 386px;
+  height: 210px;
+  left: 900.74px;
+  top: 210.55px;
+  border-radius: 20px;
+  background: #7195F1;
+  color:white;
 }
 
 .tablo-5{
-    position: fixed;
-width: 386px;
-height: 210px;
-left: 1100.74px;
-top: 450.55px;
-border-radius: 20px;
-background: #7195F1;
-color:white;
+  position: absolute;
+  width: 386px;
+  height: 210px;
+  left: 900.74px;
+  top: 450.55px;
+  border-radius: 20px;
+  background: #7195F1;
+  color:white;
 }
 .tablo-6{
-    position: fixed;
-width: 386px;
-height: 210px;
-left: 1100.74px;
-top: 700.55px;
-border-radius: 20px;
-background: #7195F1;
-color:white;
+  position: absolute;
+  width: 386px;
+  height: 210px;
+  left: 900.74px;
+  top: 700.55px;
+  border-radius: 20px;
+  background: #7195F1;
+  color:white;
 }
 .sınıf1{
 
-  
-position: absolute;
-width: 353px;
-height: 100px;
-left: 42px;
 
-font-family: 'Pontano Sans';
-font-style: normal;
-font-weight: 500;
-font-size: 30px;
-line-height: px;
+  position: absolute;
+  width: 353px;
+  height: 100px;
+  left: 42px;
 
-color: #FFFFFF;
+  font-family: 'Pontano Sans';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 30px;
+  line-height: px;
+
+  color: #FFFFFF;
 
 
 }
 
 .p1{
-    font-weight: 300px;
-    font-size: 15px;
+  font-weight: 300px;
+  font-size: 15px;
 
- 
+
 }
+
+.tablo-7{
+  position: absolute;
+  width: 386px;
+  height: 210px;
+  left: 400.74px;
+  top: 950px;
+  border-radius: 20px;
+  background: #7195F1;
+  color:white;
+
+}
+
+
 
