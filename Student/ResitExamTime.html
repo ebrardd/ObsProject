@@ -154,26 +154,25 @@
             font-weight: 500px;
             font-size: 30px;
         }
-
-        .content {
-            position: absolute;
-            top: 159px;
-            left: 200px;
-            width: calc(100% - 305px);
-            height: 100%;
-            overflow-y: auto;
-
+        body {
+            margin: 0;
+            padding: 60px 0;
+            background-color: #ffffff;
+            font-family: 'Segoe UI', sans-serif;
+            display: flex;
+            justify-content: center;
         }
 
-        /* Exam Schedule Table */
         .container {
+            position: absolute;
+            right: 650px;
+            top: 159px;
             background-color: #e0e0e0;
             padding: 30px;
             border-radius: 12px;
             max-width: 900px;
             width: 100%;
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
-            margin-top: 20px;
         }
 
         table {
@@ -186,7 +185,7 @@
         th, td {
             padding: 14px;
             text-align: left;
-            font-weight: normal;
+            font-weight: normal; /* BAŞLIKLAR VE SATIRLAR AYNI */
         }
 
         thead th {
@@ -202,108 +201,7 @@
                 padding: 30px 10px;
             }
         }
-        .container {
-            max-width: 1000px;
-            width: 100%;
-            padding: 0 20px;
-        }
 
-        /* Sayfa üst başlığı (görselde küçük ve ince) */
-        h1 {
-            font-size: 20px;
-            font-weight: 400;
-            color: #222;
-            margin-bottom: 30px;
-        }
-
-        .card {
-            background-color: #749dfc;
-            padding: 40px 30px 100px;
-            border-radius: 20px;
-            color: white;
-            position: relative;
-        }
-
-        .header {
-            font-size: 22px;
-            font-weight: 600;
-            display: flex;
-            align-items: center;
-            gap: 15px;
-            flex-wrap: wrap;
-        }
-
-        .header span.instructor {
-            font-size: 14px;
-            font-weight: 300;
-        }
-
-        .sub-header {
-            font-size: 18px;
-            font-weight: 300;
-            margin-top: 6px;
-        }
-
-        .table-wrapper {
-            background-color: white;
-            border-radius: 20px;
-            margin-top: 30px;
-            overflow: hidden;
-        }
-
-        table {
-            width: 100%;
-            border-collapse: collapse;
-            font-size: 14px;
-            color: #000;
-        }
-
-        thead th.title {
-            background-color: #333;
-            color: white;
-            font-size: 18px;
-            font-weight: 400;
-            padding: 20px;
-            text-align: center;
-        }
-
-        .subhead-row th {
-            background-color: #bdbdbd;
-            color: #fff;
-            font-weight: 500;
-            padding: 14px;
-            text-align: left;
-        }
-
-        tbody tr:nth-child(even) {
-            background-color: #f3f3f3;
-        }
-
-        tbody tr:nth-child(odd) {
-            background-color: #ffffff;
-        }
-
-        tbody td {
-            padding: 14px;
-        }
-
-        .button {
-            position: absolute;
-            bottom: 30px;
-            right: 30px;
-            background-color: #007bff;
-            color: white;
-            border: none;
-            border-radius: 14px;
-            padding: 12px 26px;
-            font-size: 14px;
-            font-weight: 500;
-            cursor: pointer;
-        }
-
-        .button:hover {
-            background-color: #0069d9;
-        }
     </style>
 </head>
 <body>
@@ -339,7 +237,7 @@
 
         <a class="link1" href="#">Home</a>
         <a class="link2" href="#">Course Letter Grade</a>
-        <a class="link3" href="#">Resit exam class list</a>
+        <a class="link3" href="#">Attend Resit exam</a>
         <a class="link4" href="#">Resit exam time</a>
         <a class="link5" href="#">Resit exam details</a>
         <a class="link6" href="#">New letter grades</a>
@@ -349,7 +247,6 @@
 
 <div class="content">
     <div class="container">
-
         <table>
             <thead>
             <tr>
