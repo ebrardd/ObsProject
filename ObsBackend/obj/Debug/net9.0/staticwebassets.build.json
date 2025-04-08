@@ -1,0 +1,12 @@
+{
+  "Version": 1,
+  "Hash": "HfwgEj94b6fiTjBhAPioazDQM6GdvxgsK0cJHbeS7kc=",
+  "Source": "ObsBackend",
+  "BasePath": "_content/ObsBackend",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": [],
+  "Endpoints": []
+}
