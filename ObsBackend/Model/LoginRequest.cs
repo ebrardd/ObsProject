@@ -6,7 +6,7 @@ namespace Model.LoginRequest
     public class LoginRequest
     {
         [Required]
-        [EmailAddress] // İstersen, opsiyonel
+        [EmailAddress] 
         public string Email { get; set; }
 
         [Required]

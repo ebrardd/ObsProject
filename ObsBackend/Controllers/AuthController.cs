@@ -1,6 +1,7 @@
 using Microsoft.AspNetCore.Mvc;
 using Model.LoginRequest;
-using ObsBackend.Data;
+using ObsBackend.Service;
+
 
 namespace ObsBackend.Controllers
 {
@@ -8,25 +9,29 @@ namespace ObsBackend.Controllers
     [Route("api/[controller]")]
     public class AuthController : ControllerBase
     {
-        private readonly AppDbContext _context;
+        private readonly IAuthService _authService;
 
-        public AuthController(AppDbContext context)
+        public AuthController(IAuthService authService)
         {
-            _context = context;
+            _authService = authService;
         }
 
         [HttpPost("login")]
         public IActionResult Login([FromBody] LoginRequest request)
         {
-            var user = _context.Users.FirstOrDefault(u => u.Email == request.Email && u.Password == request.Password);
+            var user = _authService.Authenticate(request.Email, request.Password);
 
             if (user == null)
             {
                 return Unauthorized(new { message = "Invalid email or password" });
             }
 
-            return Ok(new { message = "Login successful", role = user.Role });
+            return Ok(new
+            {
+                message = "Login successful",
+                role = user.Role,
+                userId = user.Id
+            });
         }
     }
 }
-//iş

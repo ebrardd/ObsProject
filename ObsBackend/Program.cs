@@ -1,5 +1,6 @@
 using Microsoft.EntityFrameworkCore;
 using ObsBackend.Data;
+using ObsBackend.Service;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -9,6 +10,7 @@ builder.Services.AddDbContext<AppDbContext>(options =>
 builder.Services.AddControllers();
 
 // Swagger ekle
+builder.Services.AddScoped<IAuthService, AuthService>();
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 
