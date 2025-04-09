@@ -30,8 +30,16 @@ namespace ObsBackend.Controllers
             {
                 message = "Login successful",
                 role = user.Role,
-                userId = user.Id
+                userId = user.Id,
+                redirect = user.Role switch
+                {
+                    "student" => "/student/home",
+                    "instructor" => "/instructor/home",
+                    "secretary" => "/secretary/home",
+                    _ => "/"
+                }
             });
+
         }
     }
 }

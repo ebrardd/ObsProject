@@ -12,5 +12,6 @@ namespace ObsBackend.Model
         [Column("surname")]
         public string Surname { get; set; }
         
+        public ICollection<Course> Courses { get; set; }
     }
 }
