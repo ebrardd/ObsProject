@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("ObsBackend")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+e05f7e2a6d058eb56bbff5d1e03705277ae63e2d")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+8cd5859f9d070abc83f107280110178db7e6c2fa")]
 [assembly: System.Reflection.AssemblyProductAttribute("ObsBackend")]
 [assembly: System.Reflection.AssemblyTitleAttribute("ObsBackend")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
