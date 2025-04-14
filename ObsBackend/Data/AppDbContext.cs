@@ -13,7 +13,6 @@ namespace ObsBackend.Data
         public DbSet<Secretary> Secretaries { get; set; }
         public DbSet<Course> Courses { get; set; }
         public DbSet<ResitExam> ResitExams { get; set; }
-        
         public DbSet<ExamAnnouncement> ExamAnnouncements { get; set; }
         public DbSet<LetterGrade> LetterGrades { get; set; }
 
@@ -21,22 +20,20 @@ namespace ObsBackend.Data
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
             modelBuilder.Entity<User>().ToTable("User");
+            
             modelBuilder.Entity<Instructor>().ToTable("Instructor");
-
-            // Course - Instructor (FK: InstructorId → Instructor.Id)
+            
             modelBuilder.Entity<Course>()
                 .HasOne(c => c.Instructor)
                 .WithMany(i => i.Courses)
                 .HasForeignKey(c => c.InstructorId);
-
-            // ResitExam - Course (FK: CourseCode → Course.Code)
+            
             modelBuilder.Entity<ResitExam>()
                 .HasOne(r => r.Course)
                 .WithMany(c => c.ResitExams)
                 .HasForeignKey(r => r.CourseCode)
-                .HasPrincipalKey(c => c.Code); // <--- CRITICAL
-
-            // ResitExam - Instructor (FK: LecturerId → Instructor.Id)
+                .HasPrincipalKey(c => c.Code); 
+            
             modelBuilder.Entity<ResitExam>()
                 .HasOne(r => r.Instructor)
                 .WithMany()

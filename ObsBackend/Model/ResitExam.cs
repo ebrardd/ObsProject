@@ -36,6 +36,7 @@ namespace ObsBackend.Model
         public virtual Instructor Instructor { get; set; }
         
         public string? filePath { get; set; }
+        public ExamAnnouncement? Announcement { get; set; } 
 
     }
 }
