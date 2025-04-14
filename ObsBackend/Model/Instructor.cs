@@ -10,6 +10,9 @@ namespace ObsBackend.Model
 
         [Column("surname")]
         public string Surname { get; set; } = string.Empty;
+        
+        [Column("Department")]
+        public string Department { get; set; }
 
         public ICollection<Course> Courses { get; set; } = new List<Course>();
     }

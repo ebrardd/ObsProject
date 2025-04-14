@@ -124,7 +124,8 @@ namespace ObsBackend.Controllers
         [HttpGet("classlist/{courseCode}")]
         public async Task<IActionResult> GetResitClassList(string courseCode)
         {
-            var trimmedCode = courseCode.Trim();
+            // API'den gelen formatı veritabanı formatına dönüştür
+            var trimmedCode = courseCode.Trim().Replace(" - ", "/");
 
             var allGrades = await _context.LetterGrades
                 .Where(g => g.Course == trimmedCode)
@@ -158,6 +159,7 @@ namespace ObsBackend.Controllers
 
             return Ok(resitStudents);
         }
+
 
 
 

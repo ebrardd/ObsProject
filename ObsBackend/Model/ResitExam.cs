@@ -34,6 +34,9 @@ namespace ObsBackend.Model
 
         [ForeignKey("LecturerId")]
         public virtual Instructor Instructor { get; set; }
+        
+        public string? filePath { get; set; }
+
     }
 }
 

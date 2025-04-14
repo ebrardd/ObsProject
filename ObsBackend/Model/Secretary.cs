@@ -12,7 +12,6 @@ public class Secretary : User
     [Column("surname")]
     public string Surname { get; set; }
     
-    
     [Column("id")]
-    public string id { get; set; }
+    public int id { get; set; }
 }
