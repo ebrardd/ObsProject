@@ -1,7 +1,7 @@
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using ObsBackend.Data;
-using Microsoft.AspNetCore.Http;
+using ObsBackend.Dto;
 using ObsBackend.Model;
 
 namespace ObsBackend.Controllers
@@ -22,12 +22,12 @@ namespace ObsBackend.Controllers
         {
             var courses = _context.Courses
                 .Include(c => c.Instructor)
-                .Where(c => c.instructorId == instructorId)
+                .Where(c => c.InstructorId == instructorId)
                 .Select(c => new
                 {
                     c.Code,
-                    c.Name,
-                    c.instructorId,
+                    c.LectureName,
+                    c.InstructorId,
                     Instructor = new
                     {
                         c.Instructor.Name,
@@ -38,6 +38,7 @@ namespace ObsBackend.Controllers
 
             return Ok(courses);
         }
+
         [HttpPost("courses/{code}/upload-grade")]
         [Consumes("multipart/form-data")]
         public async Task<IActionResult> UploadGradeFile([FromRoute] string code, [FromForm] UploadGradeRequest request)
@@ -69,10 +70,105 @@ namespace ObsBackend.Controllers
 
             return Ok(new { message = "File uploaded successfully." });
         }
+        [HttpGet("resitexams/{instructorId}")]
+        public IActionResult Get(int instructorId)
+        {
+            var resitExams = _context.ResitExams
+                .Include(r => r.Course)
+                .Include(r => r.Instructor)
+                .Where(r => r.LecturerId == instructorId)
+                .ToList();
+
+            return Ok(resitExams);
+        }
+        [HttpPost("examAnnouncement/{examId}")]
+        public async Task<IActionResult> CreateAnnouncement(int examId, [FromBody] ExamAnnouncementDto dto)
+        {
+            var announcement = new ExamAnnouncement
+            {
+                ExamId = examId,
+                Message = dto.Message
+            };
+
+            _context.ExamAnnouncements.Add(announcement);
+            await _context.SaveChangesAsync();
+
+            return Ok(announcement);
+        }
+        [HttpPut("examAnnouncement/{id}")]
+        public async Task<IActionResult> UpdateAnnouncement(int id, [FromBody] ExamAnnouncementDto dto)
+        {
+            var existing = await _context.ExamAnnouncements.FindAsync(id);
+            if (existing == null)
+                return NotFound();
+
+            existing.Message = dto.Message;
+            existing.ExamId = dto.ExamId;
+
+            await _context.SaveChangesAsync();
+
+            return Ok(existing);
+        }
+        [HttpDelete("examAnnouncement/{id}")]
+        public async Task<IActionResult> DeleteAnnouncement(int id)
+        {
+            var existing = await _context.ExamAnnouncements.FindAsync(id);
+            if (existing == null)
+                return NotFound();
+
+            _context.ExamAnnouncements.Remove(existing);
+            await _context.SaveChangesAsync();
+
+            return NoContent(); // 204
+        }
+        [HttpGet("classlist/{courseCode}")]
+        public async Task<IActionResult> GetResitClassList(string courseCode)
+        {
+            var trimmedCode = courseCode.Trim();
+
+            var allGrades = await _context.LetterGrades
+                .Where(g => g.Course == trimmedCode)
+                .ToListAsync();
+
+            var studentIds = allGrades.Select(g => g.StudentId).ToList();
+
+            var students = await _context.Students
+                .Where(s => studentIds.Contains(s.Id))
+                .ToListAsync();
+
+            var resitStudents = new List<ExamClassListItem>();
+
+            foreach (var grade in allGrades)
+            {
+                var student = students.FirstOrDefault(s => s.Id == grade.StudentId);
+                if (student == null) continue;
+
+                var letter = grade.Grade.ToUpper();
+
+                if (letter == "FD" || letter == "FF" || letter == "NA")
+                {
+                    resitStudents.Add(new ExamClassListItem
+                    {
+                        StudentNumber = student.Id.ToString(),
+                        FullName = student.Name + " " + student.Surname,
+                        Department = student.Department
+                    });
+                }
+            }
+
+            return Ok(resitStudents);
+        }
 
 
 
+
+
+        }
+
+
+  
 
     }
+        
+    
 
-}

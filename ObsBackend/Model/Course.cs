@@ -1,6 +1,7 @@
 using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
-namespace ObsBackend.Model;
+using ObsBackend.Model;
+
 [Table("Course")]
 public class Course
 {
@@ -9,13 +10,14 @@ public class Course
     public string Code { get; set; }
 
     [Column("lectureName")]
-    public string Name { get; set; }
+    public string LectureName { get; set; }
 
     [Column("instructorId")]
-    [ForeignKey("Instructor")]
-    
-    public int instructorId { get; set; }
+    public int InstructorId { get; set; }
 
-    public Instructor Instructor { get; set; }
+    [ForeignKey("InstructorId")]
+    public Instructor Instructor { get; set; } = null!;
+
+    public ICollection<ResitExam> ResitExams { get; set; } = new List<ResitExam>();
 }
 
