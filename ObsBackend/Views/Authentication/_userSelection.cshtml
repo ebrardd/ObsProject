@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="user-selection.css">
+    <title>User Selection</title>
+</head>
+<body>
+<header>
+    <div class="name-1">
+        <h1 class="name-2">
+            ABC University
+        </h1>
+    </div>
+</header>
+<section class="content">
+    <table>
+        <tr>
+            <th>Associate / Undergraduate / Institute</th>
+        </tr>
+        <tr>
+            <td><button id="studentBtn">Student Login</button></td>
+        </tr>
+        <tr>
+            <td><button id="instructorBtn">Instructor Login</button></td>
+        </tr>
+        <tr>
+            <td><button id="secretaryBtn">Secretary Login</button></td>
+        </tr>
+    </table>
+</section>
+
+<script>
+    document.addEventListener("DOMContentLoaded", function () {
+       
+        document.getElementById("studentBtn").addEventListener("click", () => {
+            localStorage.setItem("selectedRole", "student");
+            window.location.href = "login.html";
+        });
+
+        document.getElementById("instructorBtn").addEventListener("click", () => {
+            localStorage.setItem("selectedRole", "instructor");
+            window.location.href = "login.html";
+        });
+
+        document.getElementById("secretaryBtn").addEventListener("click", () => {
+            localStorage.setItem("selectedRole", "secretary");
+            window.location.href = "login.html";
+        });
+    });
+</script>
+</body>
+</html>
+

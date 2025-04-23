@@ -1,0 +1,279 @@
+
+* {
+box-sizing: border-box;
+font-family: "Poppins", sans-serif;
+}
+
+body {
+margin: 0;
+font-family: "Poppins";
+}
+
+/* Style the side navigation */
+.sidenav {
+height: 100%;
+width: 305px;
+position: fixed;
+z-index: 1;
+top: 0;
+left: 0;
+background-color: #d9d9d9;
+overflow-x: hidden;
+}
+.sidenav a {
+padding-top: 5px;
+color: #524b4b;
+text-decoration: none;
+display: block;
+position: fixed;
+font-weight: 300px;
+font-size: 20px;
+left: 88px;
+width: 305px;
+height: 58px;
+}
+
+.link1 {
+top: 173px;
+}
+.link2 {
+top: 231px;
+}
+.link3 {
+top: 288px;
+}
+.link4 {
+top: 347px;
+}
+.link5 {
+top: 404px;
+}
+.link6 {
+top: 470px;
+}
+.link7 {
+top: 527px;
+}
+
+/* Style the content */
+.content {
+margin-left: 200px;
+padding-left: 20px;
+}
+.rectangle {
+position: fixed;
+width: 305px;
+height: 141px;
+background-color: #b3afaf;
+}
+.img {
+position: fixed;
+width: 80px;
+height: 80px;
+top: 26px;
+left: 26px;
+border-radius: 50px;
+}
+.name {
+position: fixed;
+width: 212px;
+height: 75px;
+top: 38px;
+left: 123px;
+font-family: "Poppins", sans-serif;
+font-weight: 500px;
+font-size: 20px;
+}
+.img-1 {
+position: fixed;
+width: 32px;
+height: 32px;
+top: 173px;
+left: 25px;
+}
+.img-2 {
+position: fixed;
+width: 32px;
+height: 32px;
+top: 230px;
+left: 25px;
+}
+.img-3 {
+position: fixed;
+width: 32px;
+height: 32px;
+top: 288px;
+left: 25px;
+}
+.img-4 {
+position: fixed;
+width: 32px;
+height: 32px;
+top: 346px;
+left: 25px;
+}
+.img-5 {
+position: fixed;
+width: 25px;
+height: 20px;
+top: 410px;
+left: 29px;
+}
+.img-6 {
+position: fixed;
+width: 32px;
+height: 32px;
+top: 470px;
+left: 25px;
+}
+.img-7 {
+position: fixed;
+width: 25px;
+height: 25px;
+top: 530px;
+left: 32px;
+}
+.baslık {
+/* Group 63 */
+
+position: absolute;
+width: 216px;
+height: 41px;
+left: 335px;
+top: 15px;
+font-weight: 00px;
+font-size: 30px;
+}
+
+.desc {
+position: absolute;
+width: 441px;
+height: 66px;
+left: 445px;
+top: 90px;
+background-color: #a7c0ff;
+border-radius: 10px;
+color: white;
+}
+.desc-p{
+/* You are giving 7 courses this semester */
+
+position: fixed;
+width: 416.5px;
+height: 40.72px;
+left: 484.74px;
+top: 85.55px;
+
+font-family: 'Poppins';
+font-style: normal;
+font-weight: 500;
+font-size: 20px;
+line-height: 30px;
+
+color: #FFFFFF;
+
+}
+
+.tablo-1{
+position: absolute;
+width: 386px;
+height: 210px;
+left: 400.74px;
+top: 210px;
+border-radius: 20px;
+background: #7195F1;
+color:white;
+}
+
+.tablo-2{
+position: absolute;
+width: 386px;
+height: 210px;
+left: 400.74px;
+top: 450.55px;
+border-radius: 20px;
+background: #7195F1;
+color:white;
+}
+
+.tablo-3{
+position: absolute;
+width: 386px;
+height: 210px;
+left: 400.74px;
+top: 700.55px;
+border-radius: 20px;
+background: #7195F1;
+color:white;
+}
+
+.tablo-4{
+position: absolute;
+width: 386px;
+height: 210px;
+left: 900.74px;
+top: 210.55px;
+border-radius: 20px;
+background: #7195F1;
+color:white;
+}
+
+.tablo-5{
+position: absolute;
+width: 386px;
+height: 210px;
+left: 900.74px;
+top: 450.55px;
+border-radius: 20px;
+background: #7195F1;
+color:white;
+}
+.tablo-6{
+position: absolute;
+width: 386px;
+height: 210px;
+left: 900.74px;
+top: 700.55px;
+border-radius: 20px;
+background: #7195F1;
+color:white;
+}
+.sınıf1{
+
+
+position: absolute;
+width: 353px;
+height: 100px;
+left: 42px;
+
+font-family: 'Pontano Sans';
+font-style: normal;
+font-weight: 500;
+font-size: 30px;
+line-height: px;
+
+color: #FFFFFF;
+
+
+}
+
+.p1{
+font-weight: 300px;
+font-size: 15px;
+
+
+}
+
+.tablo-7{
+position: absolute;
+width: 386px;
+height: 210px;
+left: 400.74px;
+top: 950px;
+border-radius: 20px;
+background: #7195F1;
+color:white;
+
+}
+
+

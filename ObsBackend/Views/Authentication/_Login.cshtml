@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="login.css">
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;700&display=swap" rel="stylesheet">
+    <title>Login</title>
+</head>
+<body>
+<header>
+    <div class="name-1">
+        <h1 class="name-2">
+            ABC University
+        </h1>
+    </div>
+</header>
+<section>
+    <div class="content">
+        <form id="loginForm">
+            <p class="login">Login</p>
+            <p class="context">To get started</p>
+
+            <label for="email"></label><br>
+            <input class="input-1" type="email" id="email" name="email" placeholder="     Email"><br>
+
+            <label for="Password"></label><br>
+            <input class="input-2" type="password" id="Password" name="password" placeholder="     Password">
+
+            <button class="button" type="submit">Continue</button>
+        </form>
+    </div>
+</section>
+
+<script>
+document.getElementById("loginForm").addEventListener("submit", async function (e) {
+    e.preventDefault();
+
+    const email = document.getElementById("email").value;
+    const password = document.getElementById("Password").value;
+    const role = localStorage.getItem("selectedRole");
+
+    if (!role) {
+        alert("Please select user role.");
+        return;
+    }
+
+    try {
+        const response = await fetch("http://localhost:5210/login", {
+            method: "POST",
+            headers: { "Content-Type": "application/json" },
+            body: JSON.stringify({ email, password, role })
+        });
+
+        const data = await response.json();
+
+        if (response.ok) {
+            localStorage.setItem("role", data.role);
+            localStorage.setItem("email", email);
+
+            window.location.assign(data.redirect);
+        } else {
+            alert(data.message || "Login failed.");
+        }
+
+    } catch (err) {
+        console.error("Login error:", err);
+        alert("Could not connect to server.");
+    }
+});
+</script>
+</body>
+</html>

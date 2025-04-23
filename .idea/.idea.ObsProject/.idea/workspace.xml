@@ -8,7 +8,91 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e9500788-1809-4d78-b042-f340decd9499" name="Changes" comment="" />
+    <list default="true" id="e9500788-1809-4d78-b042-f340decd9499" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/ObsBackend/Views/Authentication/Index.cshtml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ObsBackend/Views/Authentication/_Login.cshtml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ObsBackend/Views/Authentication/_userSelection.cshtml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ObsBackend/Views/Secretary/Index.cshtml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ObsBackend/Views/Secretary/secretaryMainpage.cshtml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ObsBackend/Views/Secretary/secretaryResitexamtime.cshtml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ObsBackend/wwwroot/Instructor/announcedetails.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ObsBackend/wwwroot/Instructor/courselettergrade.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ObsBackend/wwwroot/Instructor/mainpage.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ObsBackend/wwwroot/Instructor/resitclasslist.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ObsBackend/wwwroot/Instructor/resitexamtime.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ObsBackend/wwwroot/Instructor/ressitannounce.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ObsBackend/wwwroot/css/announcedetails.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ObsBackend/wwwroot/css/courselettergrade.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ObsBackend/wwwroot/css/login.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ObsBackend/wwwroot/css/mainpage.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ObsBackend/wwwroot/css/resitannounce.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ObsBackend/wwwroot/css/resitclasslist.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ObsBackend/wwwroot/css/resitexamtime.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ObsBackend/wwwroot/css/secretarymainpage.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ObsBackend/wwwroot/css/secretaryresitexamtime.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ObsBackend/wwwroot/css/user-selection.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ObsBackend/wwwroot/student/attendresitexam.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ObsBackend/wwwroot/student/attendresitexam.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ObsBackend/wwwroot/student/courselettergrade.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ObsBackend/wwwroot/student/courselettergrade.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ObsBackend/wwwroot/student/mainpage.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ObsBackend/wwwroot/student/newlettergrade.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ObsBackend/wwwroot/student/newlettergrade.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ObsBackend/wwwroot/student/resitexamdetails.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ObsBackend/wwwroot/student/resitexamdetails.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ObsBackend/wwwroot/student/resitexamtime.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ObsBackend/wwwroot/student/resitexamtime.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ObsBackend/wwwroot/student/studentmainpage.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ObsFront/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ObsFront/.idea/indexLayout.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ObsFront/Instructor/announcedetails.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ObsFront/Instructor/announcedetails.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ObsFront/Instructor/courselettergrade.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ObsFront/Instructor/courselettergrade.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ObsFront/Instructor/mainpage.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ObsFront/Instructor/mainpage.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ObsFront/Instructor/resitannounce.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ObsFront/Instructor/resitclasslist.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ObsFront/Instructor/resitclasslist.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ObsFront/Instructor/resitexamtime.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ObsFront/Instructor/resitexamtime.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ObsFront/Instructor/ressitannounce.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ObsFront/student/attendresitexam.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ObsFront/student/attendresitexam.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ObsFront/student/courselettergrade.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ObsFront/student/courselettergrade.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ObsFront/student/mainpage.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ObsFront/student/mainpage.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ObsFront/student/newlettergrade.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ObsFront/student/newlettergrade.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ObsFront/student/resitexamdetails.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ObsFront/student/resitexamdetails.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ObsFront/student/resitexamtime.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ObsFront/student/resitexamtime.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.ObsProject/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.ObsProject/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ObsBackend/Controllers/AuthController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/ObsBackend/Controllers/AuthenticationController.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ObsBackend/Controllers/SecretaryController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/ObsBackend/Controllers/SecretaryController.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ObsBackend/Controllers/StudentController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/ObsBackend/Controllers/StudentController.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ObsBackend/ObsBackend.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/ObsBackend/ObsBackend.csproj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ObsBackend/Program.cs" beforeDir="false" afterPath="$PROJECT_DIR$/ObsBackend/Program.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ObsBackend/bin/Debug/net9.0/ObsBackend.dll" beforeDir="false" afterPath="$PROJECT_DIR$/ObsBackend/bin/Debug/net9.0/ObsBackend.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ObsBackend/bin/Debug/net9.0/ObsBackend.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/ObsBackend/bin/Debug/net9.0/ObsBackend.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ObsBackend/bin/Debug/net9.0/ObsBackend.staticwebassets.endpoints.json" beforeDir="false" afterPath="$PROJECT_DIR$/ObsBackend/bin/Debug/net9.0/ObsBackend.staticwebassets.endpoints.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ObsBackend/obj/Debug/net9.0/ObsBackend.AssemblyInfo.cs" beforeDir="false" afterPath="$PROJECT_DIR$/ObsBackend/obj/Debug/net9.0/ObsBackend.AssemblyInfo.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ObsBackend/obj/Debug/net9.0/ObsBackend.AssemblyInfoInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/ObsBackend/obj/Debug/net9.0/ObsBackend.AssemblyInfoInputs.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ObsBackend/obj/Debug/net9.0/ObsBackend.GeneratedMSBuildEditorConfig.editorconfig" beforeDir="false" afterPath="$PROJECT_DIR$/ObsBackend/obj/Debug/net9.0/ObsBackend.GeneratedMSBuildEditorConfig.editorconfig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ObsBackend/obj/Debug/net9.0/ObsBackend.csproj.CoreCompileInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/ObsBackend/obj/Debug/net9.0/ObsBackend.csproj.CoreCompileInputs.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ObsBackend/obj/Debug/net9.0/ObsBackend.csproj.FileListAbsolute.txt" beforeDir="false" afterPath="$PROJECT_DIR$/ObsBackend/obj/Debug/net9.0/ObsBackend.csproj.FileListAbsolute.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ObsBackend/obj/Debug/net9.0/ObsBackend.dll" beforeDir="false" afterPath="$PROJECT_DIR$/ObsBackend/obj/Debug/net9.0/ObsBackend.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ObsBackend/obj/Debug/net9.0/ObsBackend.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/ObsBackend/obj/Debug/net9.0/ObsBackend.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ObsBackend/obj/Debug/net9.0/ObsBackend.sourcelink.json" beforeDir="false" afterPath="$PROJECT_DIR$/ObsBackend/obj/Debug/net9.0/ObsBackend.sourcelink.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ObsBackend/obj/Debug/net9.0/ref/ObsBackend.dll" beforeDir="false" afterPath="$PROJECT_DIR$/ObsBackend/obj/Debug/net9.0/ref/ObsBackend.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ObsBackend/obj/Debug/net9.0/refint/ObsBackend.dll" beforeDir="false" afterPath="$PROJECT_DIR$/ObsBackend/obj/Debug/net9.0/refint/ObsBackend.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ObsBackend/obj/Debug/net9.0/staticwebassets.build.endpoints.json" beforeDir="false" afterPath="$PROJECT_DIR$/ObsBackend/obj/Debug/net9.0/staticwebassets.build.endpoints.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ObsBackend/obj/Debug/net9.0/staticwebassets.build.json" beforeDir="false" afterPath="$PROJECT_DIR$/ObsBackend/obj/Debug/net9.0/staticwebassets.build.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ObsBackend/obj/rider.project.model.nuget.info" beforeDir="false" afterPath="$PROJECT_DIR$/ObsBackend/obj/rider.project.model.nuget.info" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ObsBackend/obj/rider.project.restore.info" beforeDir="false" afterPath="$PROJECT_DIR$/ObsBackend/obj/rider.project.restore.info" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -16,6 +100,14 @@
   </component>
   <component name="DpaMonitoringSettings">
     <option name="firstShow" value="false" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="HTML File" />
+        <option value="CSS File" />
+      </list>
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -28,11 +120,12 @@
 }</component>
   <component name="GithubPullRequestsUISettings">{
   &quot;selectedUrlAndAccountId&quot;: {
-    &quot;url&quot;: &quot;https://github.com/ebrardd/ObsProject.git&quot;,
+    &quot;url&quot;: &quot;git@github.com:ebrardd/ObsProject.git&quot;,
     &quot;accountId&quot;: &quot;86152843-f089-454a-a4d5-8cf4265d0003&quot;
   }
 }</component>
   <component name="HighlightingSettingsPerFile">
+    <setting file="mock:///Users/ebrareminedemircioglu/Desktop/ObsProject/ObsBackend/obj/Debug/net9.0/ObsBackend.AssemblyInfo.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/a0b45f29f34f594814a7b1fbc25fe5ef3c18257956ed4f4fbfa68717db58/DbContext.cs" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="MetaFilesCheckinStateConfiguration" checkMetaFiles="true" />
@@ -47,9 +140,11 @@
   <component name="PropertiesComponent">{
   &quot;keyToString&quot;: {
     &quot;.NET Launch Settings Profile.ObsBackend: http.executor&quot;: &quot;Run&quot;,
+    &quot;DefaultHtmlFileTemplate&quot;: &quot;HTML File&quot;,
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
     &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;list.type.of.created.stylesheet&quot;: &quot;CSS&quot;,
     &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
     &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
     &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
@@ -101,6 +196,14 @@
       <updated>1744546548206</updated>
       <workItem from="1744546550760" duration="27014000" />
       <workItem from="1744638888177" duration="18032000" />
+      <workItem from="1744728045722" duration="1884000" />
+      <workItem from="1744729945955" duration="4430000" />
+      <workItem from="1744734475751" duration="2192000" />
+      <workItem from="1744741870375" duration="377000" />
+      <workItem from="1744799093592" duration="5953000" />
+      <workItem from="1745365496731" duration="1075000" />
+      <workItem from="1745366641754" duration="638000" />
+      <workItem from="1745400372780" duration="618000" />
     </task>
     <task id="LOCAL-00001" summary="method uploaded">
       <option name="closed" value="true" />

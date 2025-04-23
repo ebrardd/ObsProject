@@ -27,3 +27,33 @@ build_property.MSBuildProjectDirectory = /Users/ebrareminedemircioglu/Desktop/Ob
 build_property._RazorSourceGeneratorDebug = 
 build_property.EffectiveAnalysisLevelStyle = 9.0
 build_property.EnableCodeStyleSeverity = 
+
+[/Users/ebrareminedemircioglu/Desktop/ObsProject/ObsBackend/Views/Authentication/_login.cshtml]
+build_metadata.AdditionalFiles.TargetPath = 
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/ebrareminedemircioglu/Desktop/ObsProject/ObsBackend/Views/Authentication/_userSelection.cshtml]
+build_metadata.AdditionalFiles.TargetPath = 
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvQXV0aGVudGljYXRpb24vX3VzZXJTZWxlY3Rpb24uY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/ebrareminedemircioglu/Desktop/ObsProject/ObsBackend/Views/Authentication/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvQXV0aGVudGljYXRpb24vSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/ebrareminedemircioglu/Desktop/ObsProject/ObsBackend/Views/Authentication/_Login.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvQXV0aGVudGljYXRpb24vX0xvZ2luLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/ebrareminedemircioglu/Desktop/ObsProject/ObsBackend/Views/Secretary/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvU2VjcmV0YXJ5L0luZGV4LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/ebrareminedemircioglu/Desktop/ObsProject/ObsBackend/Views/Secretary/secretaryMainpage.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvU2VjcmV0YXJ5L3NlY3JldGFyeU1haW5wYWdlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/ebrareminedemircioglu/Desktop/ObsProject/ObsBackend/Views/Secretary/secretaryResitexamtime.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvU2VjcmV0YXJ5L3NlY3JldGFyeVJlc2l0ZXhhbXRpbWUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 

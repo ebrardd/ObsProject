@@ -1,0 +1,110 @@
+@addTagHelper *, Microsoft.AspNetCore.Mvc.TagHelpers
+
+@{
+    ViewData["Title"] = "Login Page";
+}
+
+<div id="user-selection-partial">
+    <section class="content">
+        <table>
+            <tr>
+                <th>Associate / Undergraduate / Institute</th>
+            </tr>
+            <tr>
+                <td><button id="studentBtn">Student Login</button></td>
+            </tr>
+            <tr>
+                <td><button id="instructorBtn">Instructor Login</button></td>
+            </tr>
+            <tr>
+                <td><button id="secretaryBtn">Secretary Login</button></td>
+            </tr>
+        </table>
+    </section>
+</div>
+
+
+<div id="login-partial" style="display: none;">
+    <section class="content">
+        <form id="loginForm">
+            <p class="login">Login</p>
+            <p class="context">To get started</p>
+
+            <input class="input-1" type="email" id="email" name="email" placeholder="Email" required><br>
+            <input class="input-2" type="password" id="Password" name="password" placeholder="Password" required><br>
+
+            <button class="button" type="submit">Continue</button>
+        </form>
+    </section>
+</div>
+
+<link rel="stylesheet" href="~/css/login.css" asp-append-version="true" />
+<link rel="stylesheet" href="~/css/user-selection.css" asp-append-version="true" />
+
+<script>
+document.addEventListener("DOMContentLoaded", function () {
+   
+    const studentBtn = document.getElementById("studentBtn");
+    const instructorBtn = document.getElementById("instructorBtn");
+    const secretaryBtn = document.getElementById("secretaryBtn");
+
+    studentBtn.addEventListener("click", () => showLogin("student"));
+    instructorBtn.addEventListener("click", () => showLogin("instructor"));
+    secretaryBtn.addEventListener("click", () => showLogin("secretary"));
+
+    function showLogin(role) {
+        localStorage.setItem("selectedRole", role);
+        document.getElementById("user-selection-partial").style.display = "none";
+        document.getElementById("login-partial").style.display = "block";
+    }
+
+    const loginForm = document.getElementById("loginForm");
+    if (loginForm) {
+        loginForm.addEventListener("submit", async function (e) {
+            e.preventDefault();
+
+            const email = document.getElementById("email").value;
+            const password = document.getElementById("Password").value;
+            const role = localStorage.getItem("selectedRole");
+
+            if (!role) {
+                alert("Please select a role first.");
+                window.location.reload();
+                return;
+            }
+
+            try {
+                const response = await fetch("/login", {
+                    method: "POST",
+                    headers: { "Content-Type": "application/json" },
+                    body: JSON.stringify({ email, password, role })
+                });
+
+                const data = await response.json();
+
+                if (response.ok) {
+                    alert(data.message + " (" + data.role + ")");
+                    localStorage.setItem("role", data.role);
+
+                    if (data.role === "student") {
+                        window.location.href = "/student/home";
+                    } else if (data.role === "instructor") {
+                        window.location.href = "/instructor/home";
+                    } else if (data.role === "secretary") {
+                        window.location.href = "/secretary/home";
+                    } else {
+                        window.location.href = "/";
+                    }
+
+                } else {
+                    alert(data.message || "Login failed.");
+                }
+
+            } catch (err) {
+                console.error("Error:", err);
+                alert("Failed to connect to server.");
+            }
+        });
+    }
+});
+</script>

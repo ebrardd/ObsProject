@@ -18,4 +18,9 @@
     <PackageReference Include="Swashbuckle.AspNetCore" Version="8.1.0" />
   </ItemGroup>
 
+  <ItemGroup>
+    <AdditionalFiles Include="Views\Authentication\_login.cshtml" />
+    <AdditionalFiles Include="Views\Authentication\_userSelection.cshtml" />
+  </ItemGroup>
+
 </Project>

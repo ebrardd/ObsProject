@@ -8,7 +8,8 @@ namespace ObsBackend.Controllers
 {
     [ApiController]
     [Route("api/[controller]")]
-    public class StudentController : ControllerBase
+    
+    public class StudentController : Controller
     {
         private readonly AppDbContext _context;
 
@@ -240,7 +241,7 @@ namespace ObsBackend.Controllers
         public IActionResult DownloadGradeFile(string courseCode)
         {
             var uploadsFolder = Path.Combine(Directory.GetCurrentDirectory(), "UploadedGrades");
-            var filePattern = $"{courseCode}_*"; // örnek: SE101_XXX.docx gibi
+            var filePattern = $"{courseCode}_*"; 
 
             var file = Directory.GetFiles(uploadsFolder)
                 .FirstOrDefault(f => Path.GetFileName(f).StartsWith(courseCode));

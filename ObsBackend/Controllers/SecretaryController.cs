@@ -8,16 +8,23 @@ namespace ObsBackend.Controllers
 {
     [ApiController]
     [Route("api/[controller]")]
-    public class SecretaryController : ControllerBase
+    public class SecretaryController : Controller
     {
         private readonly AppDbContext _context;
-
+       
         public SecretaryController(AppDbContext context)
         {
             _context = context;
         }
+      /*  [Route("secretary/home")]
+        [HttpGet("home")]
+        public IActionResult Mainpage()
+        {
+            return View("secretaryMainpage");
+        }
+*/
 
-        
+            
         [HttpGet("instructor/list")]
         public async Task<IActionResult> GetInstructorList( string secretaryId)
         {
