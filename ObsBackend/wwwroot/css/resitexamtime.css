@@ -6,7 +6,7 @@ font-family: "Poppins", sans-serif;
 
 body {
 margin: 0;
-font-family: "Poppins";
+
 }
 
 /* Style the side navigation */
@@ -26,7 +26,7 @@ color: #524b4b;
 text-decoration: none;
 display: block;
 position: fixed;
-font-weight: 300px;
+font-weight: 300;
 font-size: 20px;
 left: 88px;
 width: 305px;
@@ -81,7 +81,7 @@ height: 75px;
 top: 38px;
 left: 123px;
 font-family: "Poppins", sans-serif;
-font-weight: 500px;
+font-weight: 500;
 font-size: 20px;
 }
 .img-1 {
@@ -134,14 +134,12 @@ top: 530px;
 left: 32px;
 }
 .baslık {
-/* Group 63 */
-
 position: absolute;
 width: 293px;
 height: 45px;
 left: 335px;
 top: 45px;
-font-weight: 00px;
+font-weight: 0;
 font-size: 30px;
 }
 
@@ -161,7 +159,7 @@ width: 274px;
 height: 47px;
 left: 736px;
 top: 367px;
-font-weight: 500px;
+font-weight: 500;
 font-size: 20px;
 color: white;
 }
@@ -173,12 +171,12 @@ height: 44px;
 left: 779px;
 top: 432px;
 border-radius: 20px;
-font-weight: 600px;
+font-weight: 600;
 font-size: 16px;
 color: white;
 border:1px solid #006FF5;
 background-color:#006FF5 ;
-box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.5);
+box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.5);
 
 }
 

@@ -25,7 +25,7 @@ body {
   text-decoration: none;
   display: block;
   position: fixed;
-  font-weight: 300px;
+  font-weight: 300;
   font-size: 20px;
   left: 88px;
   width: 305px;
@@ -80,7 +80,7 @@ body {
   top: 38px;
   left: 123px;
   font-family: "Poppins", sans-serif;
-  font-weight: 500px;
+  font-weight: 500;
   font-size: 20px;
 }
 .img-1 {
@@ -140,7 +140,7 @@ body {
   height: 45px;
   left: 335px;
   top: 45px;
-  font-weight: 500px;
+  font-weight: 500;
   font-size: 30px;
 }
 body {
@@ -168,9 +168,9 @@ h1 {
 
 .card {
   background-color: #749dfc;
-  padding: 50px 40px 80px 40px; /* altta buton için boşluk */
+  padding: 50px 40px 80px 40px;
   border-radius: 20px;
-  color: white;
+  color : #fff;
   position: relative;
   margin-top: 40px;
   height: 600px;
@@ -184,7 +184,7 @@ h1 {
   font-size: 25px;
   line-height: 32px;
 
-  color: #ffffff;
+  color: #fff;
 }
 
 .course-info {
@@ -198,7 +198,7 @@ h1 {
 
 .course-info .code {
   font-weight: 600;
-  font-size: 22px; /* SE101/1 büyüklüğü artırıldı */
+  font-size: 22px; 
 }
 
 .course-title {
@@ -248,7 +248,7 @@ h1 {
   cursor: pointer;
   position: absolute;
   right: 30px;
-  bottom: 30px; /* tam sağ alt */
+  bottom: 30px; 
   width: 160px;
   height: 49px;
 }

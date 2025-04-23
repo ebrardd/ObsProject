@@ -6,7 +6,7 @@
 
 body {
  margin: 0;
- font-family: "Poppins";
+ 
 }
 
 /* Style the side navigation */
@@ -26,7 +26,7 @@ body {
  text-decoration: none;
  display: block;
  position: fixed;
- font-weight: 300px;
+ font-weight: 300;
  font-size: 20px;
  left: 88px;
  width: 305px;
@@ -81,7 +81,7 @@ body {
  top: 38px;
  left: 123px;
  font-family: "Poppins", sans-serif;
- font-weight: 500px;
+ font-weight: 500;
  font-size: 20px;
 }
 .img-1 {
@@ -134,14 +134,14 @@ body {
  left: 32px;
 }
 .baslık {
- /* Group 63 */
+
 
  position: absolute;
  width: 293px;
  height: 45px;
  left: 335px;
  top: 45px;
- font-weight: 500px;
+ font-weight: 500;
  font-size: 30px;
 }
 body {
@@ -165,38 +165,26 @@ right: 650px;
    
    margin-bottom: 30px;
    color: #000;
-   /* Announce Exam Class List */
-
-
-
-font-family: 'Poppins';
-font-style: normal;
+  font-style: normal;
 font-weight: 500;
 font-size: 30px;
 line-height: 45px;
-
-color: #000000;
-
-
  }
 
  .card {
    background-color: #749dfc;
-   padding: 50px 40px 80px 40px; /* altta buton için boşluk */
+   padding: 50px 40px 80px 40px; 
    border-radius: 20px;
    color: white;
    position: relative;
    margin-top: 40px;
    /* ENG101/1 Dr.Öğr.Üyesi Ayşen Kozan English 1 */
-
-
-font-family: 'Pontano Sans';
 font-style: normal;
 font-weight: 500;
 font-size: 30px;
 
 
-color: #FFFFFF;
+
 
 
  
@@ -213,7 +201,7 @@ color: #FFFFFF;
 
  .course-info .code {
    font-weight: 600;
-   font-size: 22px; /* SE101/1 büyüklüğü artırıldı */
+   font-size: 22px; 
  }
 
  .course-title {
@@ -252,7 +240,7 @@ color: #FFFFFF;
  }
 
  .share-btn {
-     position: fixed;
+     
      width: 317px;
      height: 59px;
    background-color: #007bff;
@@ -264,20 +252,10 @@ color: #FFFFFF;
    font-weight: 500;
    cursor: pointer;
    position: absolute;
-   right: 30px;/* Generate Class List */
-
-
-font-family: 'Plus Jakarta Sans';
-font-style: normal;
-font-weight: 600;
-font-size: 20px;
-line-height: 25px;
-
-color: #FFFFFF;
-
-
-   bottom: 30px; /* tam sağ alt */
-
+   right: 30px;
+   font-style: normal;
+    line-height: 25px;
+     bottom: 30px;
  }
 
  .share-btn:hover {
